@@ -2,7 +2,7 @@
 //  GnoMeApp.swift
 //  GnoMe
 //
-//  Created by admin on 3/7/23.
+//  Created by cashamirica on 3/11/23.
 //
 
 import SwiftUI

@@ -7,32 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84D27AC529B70C370038AE25 /* GnoMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27AC429B70C370038AE25 /* GnoMeApp.swift */; };
-		84D27AC729B70C370038AE25 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27AC629B70C370038AE25 /* LandingPage.swift */; };
-		84D27AC929B70C3C0038AE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D27AC829B70C3C0038AE25 /* Assets.xcassets */; };
-		84D27ACC29B70C3C0038AE25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D27ACB29B70C3C0038AE25 /* Preview Assets.xcassets */; };
-		84D27AD629B70E1F0038AE25 /* LateLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27AD529B70E1E0038AE25 /* LateLandingPage.swift */; };
-		84D27AD829B70E720038AE25 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27AD729B70E710038AE25 /* HomeScreen.swift */; };
-		84D27ADA29B70EA60038AE25 /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27AD929B70EA60038AE25 /* LeaderBoard.swift */; };
-		84D27ADC29B70ED50038AE25 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27ADB29B70ED50038AE25 /* UserProfile.swift */; };
-		84D27ADE29B70F230038AE25 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D27ADD29B70F230038AE25 /* Settings.swift */; };
+		1349BFE729BD912B00710628 /* GnoMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFE629BD912B00710628 /* GnoMeApp.swift */; };
+		1349BFE929BD912B00710628 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFE829BD912B00710628 /* LandingPage.swift */; };
+		1349BFEB29BD912F00710628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1349BFEA29BD912F00710628 /* Assets.xcassets */; };
+		1349BFEE29BD912F00710628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1349BFED29BD912F00710628 /* Preview Assets.xcassets */; };
+		1349BFF829BD986200710628 /* LateLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFF729BD986200710628 /* LateLandingPage.swift */; };
+		1349BFFA29BD987400710628 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFF929BD987400710628 /* HomeScreen.swift */; };
+		1349BFFC29BD988600710628 /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFFB29BD988600710628 /* LeaderBoard.swift */; };
+		1349BFFE29BD989500710628 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFFD29BD989500710628 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84D27AC129B70C370038AE25 /* GnoMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GnoMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84D27AC429B70C370038AE25 /* GnoMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnoMeApp.swift; sourceTree = "<group>"; };
-		84D27AC629B70C370038AE25 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
-		84D27AC829B70C3C0038AE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		84D27ACB29B70C3C0038AE25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		84D27AD529B70E1E0038AE25 /* LateLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateLandingPage.swift; sourceTree = "<group>"; };
-		84D27AD729B70E710038AE25 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		84D27AD929B70EA60038AE25 /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
-		84D27ADB29B70ED50038AE25 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		84D27ADD29B70F230038AE25 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1349BFE329BD912B00710628 /* GnoMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GnoMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1349BFE629BD912B00710628 /* GnoMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnoMeApp.swift; sourceTree = "<group>"; };
+		1349BFE829BD912B00710628 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		1349BFEA29BD912F00710628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1349BFED29BD912F00710628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1349BFF729BD986200710628 /* LateLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateLandingPage.swift; sourceTree = "<group>"; };
+		1349BFF929BD987400710628 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		1349BFFB29BD988600710628 /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
+		1349BFFD29BD989500710628 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		84D27ABE29B70C370038AE25 /* Frameworks */ = {
+		1349BFE029BD912B00710628 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,80 +40,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84D27AB829B70C370038AE25 = {
+		1349BFDA29BD912B00710628 = {
 			isa = PBXGroup;
 			children = (
-				84D27AC329B70C370038AE25 /* GnoMe */,
-				84D27AC229B70C370038AE25 /* Products */,
+				1349BFE529BD912B00710628 /* GnoMe */,
+				1349BFE429BD912B00710628 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		84D27AC229B70C370038AE25 /* Products */ = {
+		1349BFE429BD912B00710628 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84D27AC129B70C370038AE25 /* GnoMe.app */,
+				1349BFE329BD912B00710628 /* GnoMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84D27AC329B70C370038AE25 /* GnoMe */ = {
+		1349BFE529BD912B00710628 /* GnoMe */ = {
 			isa = PBXGroup;
 			children = (
-				84D27AC429B70C370038AE25 /* GnoMeApp.swift */,
-				84D27AD429B70D2F0038AE25 /* Models */,
-				84D27AD329B70CC50038AE25 /* Resources */,
-				84D27AD229B70C8D0038AE25 /* Views */,
-				84D27AC829B70C3C0038AE25 /* Assets.xcassets */,
-				84D27ACA29B70C3C0038AE25 /* Preview Content */,
+				1349BFE629BD912B00710628 /* GnoMeApp.swift */,
+				1349BFF629BD97B800710628 /* Views */,
+				1349BFF529BD97A900710628 /* Resources */,
+				1349BFF429BD979F00710628 /* Models */,
+				1349BFEA29BD912F00710628 /* Assets.xcassets */,
+				1349BFEC29BD912F00710628 /* Preview Content */,
 			);
 			path = GnoMe;
 			sourceTree = "<group>";
 		};
-		84D27ACA29B70C3C0038AE25 /* Preview Content */ = {
+		1349BFEC29BD912F00710628 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				84D27ACB29B70C3C0038AE25 /* Preview Assets.xcassets */,
+				1349BFED29BD912F00710628 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		84D27AD229B70C8D0038AE25 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				84D27AC629B70C370038AE25 /* LandingPage.swift */,
-				84D27AD529B70E1E0038AE25 /* LateLandingPage.swift */,
-				84D27AD729B70E710038AE25 /* HomeScreen.swift */,
-				84D27AD929B70EA60038AE25 /* LeaderBoard.swift */,
-				84D27ADB29B70ED50038AE25 /* UserProfile.swift */,
-				84D27ADD29B70F230038AE25 /* Settings.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		84D27AD329B70CC50038AE25 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		84D27AD429B70D2F0038AE25 /* Models */ = {
+		1349BFF429BD979F00710628 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1349BFF529BD97A900710628 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1349BFF629BD97B800710628 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1349BFE829BD912B00710628 /* LandingPage.swift */,
+				1349BFF729BD986200710628 /* LateLandingPage.swift */,
+				1349BFF929BD987400710628 /* HomeScreen.swift */,
+				1349BFFB29BD988600710628 /* LeaderBoard.swift */,
+				1349BFFD29BD989500710628 /* UserProfile.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84D27AC029B70C370038AE25 /* GnoMe */ = {
+		1349BFE229BD912B00710628 /* GnoMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84D27ACF29B70C3C0038AE25 /* Build configuration list for PBXNativeTarget "GnoMe" */;
+			buildConfigurationList = 1349BFF129BD912F00710628 /* Build configuration list for PBXNativeTarget "GnoMe" */;
 			buildPhases = (
-				84D27ABD29B70C370038AE25 /* Sources */,
-				84D27ABE29B70C370038AE25 /* Frameworks */,
-				84D27ABF29B70C370038AE25 /* Resources */,
+				1349BFDF29BD912B00710628 /* Sources */,
+				1349BFE029BD912B00710628 /* Frameworks */,
+				1349BFE129BD912B00710628 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -123,25 +120,25 @@
 			);
 			name = GnoMe;
 			productName = GnoMe;
-			productReference = 84D27AC129B70C370038AE25 /* GnoMe.app */;
+			productReference = 1349BFE329BD912B00710628 /* GnoMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		84D27AB929B70C370038AE25 /* Project object */ = {
+		1349BFDB29BD912B00710628 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					84D27AC029B70C370038AE25 = {
+					1349BFE229BD912B00710628 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 84D27ABC29B70C370038AE25 /* Build configuration list for PBXProject "GnoMe" */;
+			buildConfigurationList = 1349BFDE29BD912B00710628 /* Build configuration list for PBXProject "GnoMe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -149,47 +146,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 84D27AB829B70C370038AE25;
-			productRefGroup = 84D27AC229B70C370038AE25 /* Products */;
+			mainGroup = 1349BFDA29BD912B00710628;
+			productRefGroup = 1349BFE429BD912B00710628 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84D27AC029B70C370038AE25 /* GnoMe */,
+				1349BFE229BD912B00710628 /* GnoMe */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		84D27ABF29B70C370038AE25 /* Resources */ = {
+		1349BFE129BD912B00710628 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D27ACC29B70C3C0038AE25 /* Preview Assets.xcassets in Resources */,
-				84D27AC929B70C3C0038AE25 /* Assets.xcassets in Resources */,
+				1349BFEE29BD912F00710628 /* Preview Assets.xcassets in Resources */,
+				1349BFEB29BD912F00710628 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		84D27ABD29B70C370038AE25 /* Sources */ = {
+		1349BFDF29BD912B00710628 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D27ADA29B70EA60038AE25 /* LeaderBoard.swift in Sources */,
-				84D27AD829B70E720038AE25 /* HomeScreen.swift in Sources */,
-				84D27ADC29B70ED50038AE25 /* UserProfile.swift in Sources */,
-				84D27AD629B70E1F0038AE25 /* LateLandingPage.swift in Sources */,
-				84D27ADE29B70F230038AE25 /* Settings.swift in Sources */,
-				84D27AC729B70C370038AE25 /* LandingPage.swift in Sources */,
-				84D27AC529B70C370038AE25 /* GnoMeApp.swift in Sources */,
+				1349BFFC29BD988600710628 /* LeaderBoard.swift in Sources */,
+				1349BFFA29BD987400710628 /* HomeScreen.swift in Sources */,
+				1349BFFE29BD989500710628 /* UserProfile.swift in Sources */,
+				1349BFF829BD986200710628 /* LateLandingPage.swift in Sources */,
+				1349BFE929BD912B00710628 /* LandingPage.swift in Sources */,
+				1349BFE729BD912B00710628 /* GnoMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		84D27ACD29B70C3C0038AE25 /* Debug */ = {
+		1349BFEF29BD912F00710628 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		84D27ACE29B70C3C0038AE25 /* Release */ = {
+		1349BFF029BD912F00710628 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -303,7 +299,7 @@
 			};
 			name = Release;
 		};
-		84D27AD029B70C3C0038AE25 /* Debug */ = {
+		1349BFF229BD912F00710628 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,7 +327,7 @@
 			};
 			name = Debug;
 		};
-		84D27AD129B70C3C0038AE25 /* Release */ = {
+		1349BFF329BD912F00710628 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -362,25 +358,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84D27ABC29B70C370038AE25 /* Build configuration list for PBXProject "GnoMe" */ = {
+		1349BFDE29BD912B00710628 /* Build configuration list for PBXProject "GnoMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84D27ACD29B70C3C0038AE25 /* Debug */,
-				84D27ACE29B70C3C0038AE25 /* Release */,
+				1349BFEF29BD912F00710628 /* Debug */,
+				1349BFF029BD912F00710628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84D27ACF29B70C3C0038AE25 /* Build configuration list for PBXNativeTarget "GnoMe" */ = {
+		1349BFF129BD912F00710628 /* Build configuration list for PBXNativeTarget "GnoMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84D27AD029B70C3C0038AE25 /* Debug */,
-				84D27AD129B70C3C0038AE25 /* Release */,
+				1349BFF229BD912F00710628 /* Debug */,
+				1349BFF329BD912F00710628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 84D27AB929B70C370038AE25 /* Project object */;
+	rootObject = 1349BFDB29BD912B00710628 /* Project object */;
 }

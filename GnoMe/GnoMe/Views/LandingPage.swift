@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
+//  LandingPage.swift
 //  GnoMe
 //
-//  Created by admin on 3/7/23.
+//  Created by cashamirica on 3/11/23.
 //
 
 import SwiftUI
@@ -19,7 +19,7 @@ struct LandingPage: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandingPage_Previews: PreviewProvider {
     static var previews: some View {
         LandingPage()
     }
