@@ -31,9 +31,12 @@ struct WelcomeScreen: View {
                     .position(x:195,y:50)
                 HStack{
                     
-                    Button("Sign Up") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                    }
+                    //Button("Sign Up") {
+                        NavigationLink(destination: SignUp1()){
+                            Text("Sign Up")
+                                .frame(minWidth: 0,maxWidth: 100)
+                        }
+                    //}
                     .padding()
                     .background(Color("beige"))
                     .clipShape(Capsule())
