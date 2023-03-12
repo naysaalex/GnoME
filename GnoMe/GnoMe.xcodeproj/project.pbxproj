@@ -14,7 +14,8 @@
 		1349BFF829BD986200710628 /* LateLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFF729BD986200710628 /* LateLandingPage.swift */; };
 		1349BFFA29BD987400710628 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFF929BD987400710628 /* HomeScreen.swift */; };
 		1349BFFC29BD988600710628 /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFFB29BD988600710628 /* LeaderBoard.swift */; };
-		1349BFFE29BD989500710628 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFFD29BD989500710628 /* UserProfile.swift */; };
+		1349BFFF29BD9A8E00710628 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFFD29BD989500710628 /* UserProfile.swift */; };
+		1349C00129BDA34700710628 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349C00029BDA34700710628 /* WelcomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1349BFF929BD987400710628 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		1349BFFB29BD988600710628 /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
 		1349BFFD29BD989500710628 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		1349C00029BDA34700710628 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				1349BFF929BD987400710628 /* HomeScreen.swift */,
 				1349BFFB29BD988600710628 /* LeaderBoard.swift */,
 				1349BFFD29BD989500710628 /* UserProfile.swift */,
+				1349C00029BDA34700710628 /* WelcomeScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,8 +178,9 @@
 			files = (
 				1349BFFC29BD988600710628 /* LeaderBoard.swift in Sources */,
 				1349BFFA29BD987400710628 /* HomeScreen.swift in Sources */,
-				1349BFFE29BD989500710628 /* UserProfile.swift in Sources */,
+				1349BFFF29BD9A8E00710628 /* UserProfile.swift in Sources */,
 				1349BFF829BD986200710628 /* LateLandingPage.swift in Sources */,
+				1349C00129BDA34700710628 /* WelcomeScreen.swift in Sources */,
 				1349BFE929BD912B00710628 /* LandingPage.swift in Sources */,
 				1349BFE729BD912B00710628 /* GnoMeApp.swift in Sources */,
 			);
