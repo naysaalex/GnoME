@@ -66,13 +66,14 @@ struct SignUp2: View {
                         .frame(width:360)
                 }
                 .textFieldStyle(.roundedBorder)
-                
-                Button("Continue") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                NavigationLink(destination: SignUp3()){
+                    Text("Continue")
+                        .frame(minWidth: 0,maxWidth: 100)
+                        .padding()
+                        .foregroundColor(.blue)
+                        .background(Color("beige"))
+                        .cornerRadius(40)
                 }
-                .padding()
-                .background(Color("beige"))
-                .clipShape(Capsule())
             }
             
         }

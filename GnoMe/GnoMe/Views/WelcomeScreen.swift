@@ -31,24 +31,25 @@ struct WelcomeScreen: View {
                     .position(x:195,y:50)
                 HStack{
                     
-                    //Button("Sign Up") {
                         NavigationLink(destination: SignUp1()){
                             Text("Sign Up")
                                 .frame(minWidth: 0,maxWidth: 100)
+                                .padding()
+                                .foregroundColor(.blue)
+                                .background(Color("beige"))
+                                .cornerRadius(40)
+                                .position(x:109,y:40)
                         }
-                    //}
-                    .padding()
-                    .background(Color("beige"))
-                    .clipShape(Capsule())
-                    .position(x:109,y:40)
                     Spacer()
-                    Button("Log in") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    NavigationLink(destination: SignUp1()){
+                        Text("Log In")
+                            .frame(minWidth: 0,maxWidth: 100)
+                            .padding()
+                            .foregroundColor(.blue)
+                            .background(Color("beige"))
+                            .cornerRadius(40)
+                            .position(x:90,y:40)
                     }
-                    .padding()
-                    .background(Color("beige"))
-                    .clipShape(Capsule())
-                    .position(x:90, y:40)
                 }
                 Spacer()
             }

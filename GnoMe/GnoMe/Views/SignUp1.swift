@@ -43,12 +43,14 @@ struct SignUp1: View {
                 }
                 .textFieldStyle(.roundedBorder)
                 
-                Button("Continue") {
-                    SignUp2()
+                NavigationLink(destination: SignUp2()){
+                    Text("Continue")
+                        .frame(minWidth: 0,maxWidth: 100)
+                        .padding()
+                        .foregroundColor(.blue)
+                        .background(Color("beige"))
+                        .cornerRadius(40)
                 }
-                .padding()
-                .background(Color("beige"))
-                .clipShape(Capsule())
             }
             
         }
