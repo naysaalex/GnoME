@@ -11,7 +11,7 @@ import SwiftUI
 struct GnoMeApp: App {
     var body: some Scene {
         WindowGroup {
-            LandingPage()
+            WelcomeScreen()
         }
     }
 }

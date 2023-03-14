@@ -22,15 +22,15 @@ struct SignUp3: View {
                     Image("title")
                         .resizable()
                         .frame(width: 120.0, height: 50.0)
-                        .position(CGPoint(x:70,y:20))
+                        .position(CGPoint(x:70,y:30))
                     Image("circleIcon")
                         .resizable()
                         .frame(width:60.0,height:60.0)
-                        .position(CGPoint(x:140,y:20))
+                        .position(CGPoint(x:150,y:35))
                 }
                 
                 Text("Profile Picture: ")
-                    .position(x:70,y:-130)
+                    .position(x:90,y:-115)
                 HStack{
                     Image(uiImage: self.image)
                         .resizable()
@@ -41,23 +41,27 @@ struct SignUp3: View {
                         .aspectRatio(contentMode: .fill)
                         .clipShape(Circle())
                         .padding(8)
-                        .position(x:95, y:-265)
+                        .position(x:105, y:-205)
                     
                     Text("Change photo")
                         .frame(width:150, height: 50)
                         .background(Color("beige"))
                         .cornerRadius(40)
                         .foregroundColor(.blue)
-                        .position(x:80, y:-270)
+                        .position(x:90, y:-200)
                 }
                 
                 VStack{
                     Text("One thing I want people to Gno about me is ...")
-                        .position(x:195, y:-200)
+                        .position(x:205, y:-200)
                     
                     TextField("Bio", text: self.$bio.max(200))
-                        .padding()
-
+                        .padding(.all)
+                        .background(Color(.white))
+                        .frame(width: 350)
+                        .cornerRadius(20)
+                        .position(x:205, y:-240)
+                        .foregroundColor(.black)
                     
                 }
                 

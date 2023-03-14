@@ -21,11 +21,11 @@ struct SignUp1: View {
                     Image("title")
                         .resizable()
                         .frame(width: 120.0, height: 50.0)
-                        .position(CGPoint(x:70,y:20))
+                        .position(CGPoint(x:70,y:30))
                     Image("circleIcon")
                         .resizable()
                         .frame(width:60.0,height:60.0)
-                        .position(CGPoint(x:140,y:20))
+                        .position(CGPoint(x:150,y:35))
                 }
                 VStack{
                     TextField("Email", text: $email)
@@ -35,11 +35,11 @@ struct SignUp1: View {
                     TextField("Password", text: $password)
                         .disableAutocorrection(true)
                         .frame(width:360)
-                        .position(x:195,y:-130)
+                        .position(x:210,y:-130)
                     TextField("Confirm Password", text: $confirmPass)
                         .disableAutocorrection(true)
                         .frame(width: 360)
-                        .position(x:195,y:-200)
+                        .position(x:210,y:-200)
                 }
                 .textFieldStyle(.roundedBorder)
                 

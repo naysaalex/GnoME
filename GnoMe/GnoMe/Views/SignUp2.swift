@@ -22,11 +22,11 @@ struct SignUp2: View {
                     Image("title")
                         .resizable()
                         .frame(width: 120.0, height: 50.0)
-                        .position(CGPoint(x:70,y:20))
+                        .position(CGPoint(x:70,y:30))
                     Image("circleIcon")
                         .resizable()
                         .frame(width:60.0,height:60.0)
-                        .position(CGPoint(x:140,y:20))
+                        .position(CGPoint(x:150,y:35))
                 }
                 
                 VStack{
@@ -36,6 +36,7 @@ struct SignUp2: View {
                         .disableAutocorrection(true)
                         .position(x:180,y:-225)
                         .frame(width:360)
+                        .background(Color(.white))
                     
                     Text("First Name: ")
                         .position(x:60, y:-225)
