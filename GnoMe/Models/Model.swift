@@ -1,8 +1,17 @@
 //  Model.swift
 //  GnoME usingData
 //
-//  Created by user232149 on 3/31/23.
+//  Created by gnome on 3/31/23.
 //
+
+//coredata is a method to store data on your device
+//when you need to exchange information, you need a server
+//cloudkit - apple framework
+//firestore - 3rd party ; authentication
+
+/* Object Graph Persistence Framework - relationship between the different objects you have built
+ 
+ */
 
 import Foundation
 import SwiftUI

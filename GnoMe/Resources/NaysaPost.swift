@@ -2,7 +2,7 @@
 //  NaysaPost.swift
 //  GnoME usingData
 //
-//  Created by user232149 on 4/2/23.
+//  Created by gnome on 4/2/23.
 //
 
 import SwiftUI

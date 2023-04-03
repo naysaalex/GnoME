@@ -2,7 +2,7 @@
 //  HomeScreen.swift
 //  GnoMe
 //
-//  Created by cashamirica on 3/11/23.
+//  Created by gnome on 3/11/23.
 //
 
 import SwiftUI

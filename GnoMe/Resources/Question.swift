@@ -2,7 +2,7 @@
 //  Question.swift
 //  GnoME usingData
 //
-//  Created by user232149 on 4/1/23.
+//  Created by gnome on 4/1/23.
 //
 
 import SwiftUI

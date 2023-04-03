@@ -2,7 +2,7 @@
 //  SignUp1.swift
 //  GnoMe
 //
-//  Created by cashamirica on 3/12/23.
+//  Created by gnome on 3/12/23.
 //
 
 import SwiftUI
