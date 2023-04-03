@@ -1,0 +1,41 @@
+{
+    "questions": {
+        "question": "What is your favorite color?",
+        "date": "2023-03-31",
+        "time": "10:00 AM"
+    },
+    "selfPost": {
+        "profilePic": "https://example.com/profilepic.jpg",
+        "userName": "johndoe",
+        "time": "11:00 AM",
+        "date": "2023-03-31",
+        "answer": "My favorite color is blue.",
+        "likes": 10,
+        "comments": [
+            {
+                "userName": "janedoe",
+                "commentText": "I like blue too!"
+            },
+            {
+                "userName": "bobsmith",
+                "commentText": "Green is my favorite color."
+            }
+        ]
+    },
+    "post": {
+        "profilePic": "https://example.com/profilepic.jpg",
+        "userName": "janedoe",
+        "time": "12:00 PM",
+        "date": "2023-03-31",
+        "answer": "My favorite color is red.",
+        "likes": 5,
+        "comments": [
+            {
+                "userName": "johndoe",
+                "commentText": "I like red too!"
+            }
+        ]
+    }
+}
+
+

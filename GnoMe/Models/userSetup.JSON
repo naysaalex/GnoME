@@ -1,0 +1,12 @@
+{
+    "pfp": "example.png",
+    "email": String
+    "username": String
+    "password": String
+    "FName": String
+    "LName": String
+    "pronouns": String
+    "phoneNumber": Int
+    "Posts": [Post]
+    "Bio": String
+}

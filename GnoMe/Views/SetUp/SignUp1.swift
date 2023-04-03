@@ -7,12 +7,20 @@
 
 import SwiftUI
 
+class UserData:ObservableObject{
+    @Published var user1 = Users(pfp: nil, email: "", username: "", password: "", FName: "", LName: "", pronouns: "", phoneNumber: "", Posts: [], Bio: "")
+}
 
 struct SignUp1: View {
     @State private var email:String = ""
     @State private var password:String = ""
     @State private var confirmPass:String = ""
+    @ObservedObject var userData = UserData()
+    
     var body: some View {
+        //error - why does everything keep shifting
+        //error - why can you click certain textbox's but not others
+        //error - how to make textboxes material sensitive
         ZStack{
             Color("tan")
                 .ignoresSafeArea()
@@ -21,25 +29,31 @@ struct SignUp1: View {
                     Image("title")
                         .resizable()
                         .frame(width: 120.0, height: 50.0)
-                        .position(CGPoint(x:70,y:30))
+                        .position(CGPoint(x:-30,y:15))
+                        .padding(.top)
                     Image("circleIcon")
                         .resizable()
                         .frame(width:60.0,height:60.0)
-                        .position(CGPoint(x:150,y:35))
+                        .position(CGPoint(x:120,y:15))
+                        .padding(.top)
                 }
+                .fixedSize(horizontal: true, vertical: true)
                 VStack{
                     TextField("Email", text: $email)
                         .disableAutocorrection(true)
-                        .position(x:180,y:-200)
+                        .position(x:180,y:200)
                         .frame(width:360)
+                        //.fixedSize()
                     TextField("Password", text: $password)
                         .disableAutocorrection(true)
                         .frame(width:360)
-                        .position(x:210,y:-130)
+                        .position(x:200,y:230)
+                        //.fixedSize()
                     TextField("Confirm Password", text: $confirmPass)
                         .disableAutocorrection(true)
                         .frame(width: 360)
-                        .position(x:210,y:-200)
+                        .position(x:200,y:180)
+                        //.fixedSize()
                 }
                 .textFieldStyle(.roundedBorder)
                 
@@ -50,6 +64,11 @@ struct SignUp1: View {
                         .foregroundColor(.blue)
                         .background(Color("beige"))
                         .cornerRadius(40)
+                        .position(x:200, y: 270)
+                        .onTapGesture {
+                            userData.user1.email = email
+                            userData.user1.password = confirmPass
+                        }
                 }
             }
             
