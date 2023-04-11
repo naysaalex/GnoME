@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1314BD1729DF3A10006F0A76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1314BD1629DF3A10006F0A76 /* ContentView.swift */; };
+		1349BFE729BD912B00710628 /* GnoMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFE629BD912B00710628 /* GnoMeApp.swift */; };
+		1349BFE929BD912B00710628 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFE829BD912B00710628 /* LandingPage.swift */; };
+		1349BFEB29BD912F00710628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1349BFEA29BD912F00710628 /* Assets.xcassets */; };
+		1349BFEE29BD912F00710628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1349BFED29BD912F00710628 /* Preview Assets.xcassets */; };
+		1349BFF829BD986200710628 /* LateLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFF729BD986200710628 /* LateLandingPage.swift */; };
+		1349BFFA29BD987400710628 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFF929BD987400710628 /* HomeScreen.swift */; };
+		1349BFFC29BD988600710628 /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFFB29BD988600710628 /* LeaderBoard.swift */; };
+		1349BFFF29BD9A8E00710628 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349BFFD29BD989500710628 /* UserProfile.swift */; };
+		1349C00129BDA34700710628 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349C00029BDA34700710628 /* WelcomeScreen.swift */; };
+		1349C00329BE52E300710628 /* SignUp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349C00229BE52E300710628 /* SignUp1.swift */; };
+		1349C00529BE58B200710628 /* SignUp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349C00429BE58B200710628 /* SignUp2.swift */; };
+		1349C00729BE9C0E00710628 /* SignUp3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349C00629BE9C0E00710628 /* SignUp3.swift */; };
+		13A8E33F29DA16C400312358 /* data.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 13A8E33E29DA16C400312358 /* data.JSON */; };
+		13A8E34129DA16D900312358 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A8E34029DA16D900312358 /* Model.swift */; };
+		13A8E34629DA17CB00312358 /* BlakePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A8E34429DA17CA00312358 /* BlakePost.swift */; };
+		13A8E34729DA17CB00312358 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A8E34529DA17CB00312358 /* Question.swift */; };
+		13A8E34B29DA17D800312358 /* JacobPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A8E34829DA17D700312358 /* JacobPost.swift */; };
+		13A8E34C29DA17D800312358 /* NaysaPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A8E34929DA17D700312358 /* NaysaPost.swift */; };
+		13A8E34D29DA17D800312358 /* HannahPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A8E34A29DA17D800312358 /* HannahPost.swift */; };
+		13ADD89429E52DF900BEC79E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13ADD89329E52DF900BEC79E /* GoogleService-Info.plist */; };
+		13B1ABB329E350F20097E385 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1ABB229E350F20097E385 /* DataController.swift */; };
+		13BB43B529DA861100604770 /* userSetup.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 13BB43B429DA861100604770 /* userSetup.JSON */; };
+		DD7151C8C84DAB9E4654543E /* Pods_GnoMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBD8F3FCF36DD65B0EAAE6A /* Pods_GnoMe.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EBD8F3FCF36DD65B0EAAE6A /* Pods_GnoMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GnoMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1314BD1629DF3A10006F0A76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1349BFE329BD912B00710628 /* GnoMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GnoMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1349BFE629BD912B00710628 /* GnoMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnoMeApp.swift; sourceTree = "<group>"; };
+		1349BFE829BD912B00710628 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		1349BFEA29BD912F00710628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1349BFED29BD912F00710628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1349BFF729BD986200710628 /* LateLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateLandingPage.swift; sourceTree = "<group>"; };
+		1349BFF929BD987400710628 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		1349BFFB29BD988600710628 /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
+		1349BFFD29BD989500710628 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		1349C00029BDA34700710628 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		1349C00229BE52E300710628 /* SignUp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp1.swift; sourceTree = "<group>"; };
+		1349C00429BE58B200710628 /* SignUp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2.swift; sourceTree = "<group>"; };
+		1349C00629BE9C0E00710628 /* SignUp3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3.swift; sourceTree = "<group>"; };
+		13A8E33E29DA16C400312358 /* data.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.JSON; sourceTree = "<group>"; };
+		13A8E34029DA16D900312358 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		13A8E34429DA17CA00312358 /* BlakePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlakePost.swift; sourceTree = "<group>"; };
+		13A8E34529DA17CB00312358 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		13A8E34829DA17D700312358 /* JacobPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JacobPost.swift; sourceTree = "<group>"; };
+		13A8E34929DA17D700312358 /* NaysaPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaysaPost.swift; sourceTree = "<group>"; };
+		13A8E34A29DA17D800312358 /* HannahPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HannahPost.swift; sourceTree = "<group>"; };
+		13ADD89329E52DF900BEC79E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		13B1ABB229E350F20097E385 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		13BB43B429DA861100604770 /* userSetup.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userSetup.JSON; sourceTree = "<group>"; };
+		399F71042BE45E2E9AB5B760 /* Pods-GnoMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnoMe.release.xcconfig"; path = "Target Support Files/Pods-GnoMe/Pods-GnoMe.release.xcconfig"; sourceTree = "<group>"; };
+		CA09F0F4C81413A7F40CADB1 /* Pods-GnoMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnoMe.debug.xcconfig"; path = "Target Support Files/Pods-GnoMe/Pods-GnoMe.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1349BFE029BD912B00710628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7151C8C84DAB9E4654543E /* Pods_GnoMe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1349BFDA29BD912B00710628 = {
+			isa = PBXGroup;
+			children = (
+				1349BFE529BD912B00710628 /* GnoMe */,
+				1349BFE429BD912B00710628 /* Products */,
+				7E1E32B7F4CE7BD01C906684 /* Pods */,
+				4DEBD00AA8B0A270C4FEF120 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1349BFE429BD912B00710628 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1349BFE329BD912B00710628 /* GnoMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1349BFE529BD912B00710628 /* GnoMe */ = {
+			isa = PBXGroup;
+			children = (
+				13ADD89329E52DF900BEC79E /* GoogleService-Info.plist */,
+				1349BFE629BD912B00710628 /* GnoMeApp.swift */,
+				1314BD1629DF3A10006F0A76 /* ContentView.swift */,
+				13B1ABB229E350F20097E385 /* DataController.swift */,
+				1349BFF629BD97B800710628 /* Views */,
+				1349BFF529BD97A900710628 /* Resources */,
+				1349BFF429BD979F00710628 /* Models */,
+				1349BFEA29BD912F00710628 /* Assets.xcassets */,
+				1349BFEC29BD912F00710628 /* Preview Content */,
+			);
+			path = GnoMe;
+			sourceTree = "<group>";
+		};
+		1349BFEC29BD912F00710628 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1349BFED29BD912F00710628 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1349BFF429BD979F00710628 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13A8E33E29DA16C400312358 /* data.JSON */,
+				13BB43B429DA861100604770 /* userSetup.JSON */,
+				13A8E34029DA16D900312358 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1349BFF529BD97A900710628 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13A8E34429DA17CA00312358 /* BlakePost.swift */,
+				13A8E34529DA17CB00312358 /* Question.swift */,
+				13A8E34A29DA17D800312358 /* HannahPost.swift */,
+				13A8E34829DA17D700312358 /* JacobPost.swift */,
+				13A8E34929DA17D700312358 /* NaysaPost.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1349BFF629BD97B800710628 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13A8E34329DA179000312358 /* Main */,
+				13A8E34229DA173500312358 /* SetUp */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13A8E34229DA173500312358 /* SetUp */ = {
+			isa = PBXGroup;
+			children = (
+				1349C00029BDA34700710628 /* WelcomeScreen.swift */,
+				1349C00229BE52E300710628 /* SignUp1.swift */,
+				1349C00429BE58B200710628 /* SignUp2.swift */,
+				1349C00629BE9C0E00710628 /* SignUp3.swift */,
+			);
+			path = SetUp;
+			sourceTree = "<group>";
+		};
+		13A8E34329DA179000312358 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1349BFE829BD912B00710628 /* LandingPage.swift */,
+				1349BFF729BD986200710628 /* LateLandingPage.swift */,
+				1349BFF929BD987400710628 /* HomeScreen.swift */,
+				1349BFFB29BD988600710628 /* LeaderBoard.swift */,
+				1349BFFD29BD989500710628 /* UserProfile.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4DEBD00AA8B0A270C4FEF120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EBD8F3FCF36DD65B0EAAE6A /* Pods_GnoMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E1E32B7F4CE7BD01C906684 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA09F0F4C81413A7F40CADB1 /* Pods-GnoMe.debug.xcconfig */,
+				399F71042BE45E2E9AB5B760 /* Pods-GnoMe.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1349BFE229BD912B00710628 /* GnoMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1349BFF129BD912F00710628 /* Build configuration list for PBXNativeTarget "GnoMe" */;
+			buildPhases = (
+				38A377ABDE7853AD43121F03 /* [CP] Check Pods Manifest.lock */,
+				1349BFDF29BD912B00710628 /* Sources */,
+				1349BFE029BD912B00710628 /* Frameworks */,
+				1349BFE129BD912B00710628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GnoMe;
+			productName = GnoMe;
+			productReference = 1349BFE329BD912B00710628 /* GnoMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1349BFDB29BD912B00710628 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1349BFE229BD912B00710628 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 1349BFDE29BD912B00710628 /* Build configuration list for PBXProject "GnoMe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1349BFDA29BD912B00710628;
+			productRefGroup = 1349BFE429BD912B00710628 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1349BFE229BD912B00710628 /* GnoMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1349BFE129BD912B00710628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1349BFEE29BD912F00710628 /* Preview Assets.xcassets in Resources */,
+				13A8E33F29DA16C400312358 /* data.JSON in Resources */,
+				13ADD89429E52DF900BEC79E /* GoogleService-Info.plist in Resources */,
+				13BB43B529DA861100604770 /* userSetup.JSON in Resources */,
+				1349BFEB29BD912F00710628 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38A377ABDE7853AD43121F03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GnoMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1349BFDF29BD912B00710628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1349BFFC29BD988600710628 /* LeaderBoard.swift in Sources */,
+				1349BFFA29BD987400710628 /* HomeScreen.swift in Sources */,
+				13A8E34C29DA17D800312358 /* NaysaPost.swift in Sources */,
+				1349BFFF29BD9A8E00710628 /* UserProfile.swift in Sources */,
+				1349BFF829BD986200710628 /* LateLandingPage.swift in Sources */,
+				1349C00129BDA34700710628 /* WelcomeScreen.swift in Sources */,
+				13B1ABB329E350F20097E385 /* DataController.swift in Sources */,
+				1349BFE929BD912B00710628 /* LandingPage.swift in Sources */,
+				1314BD1729DF3A10006F0A76 /* ContentView.swift in Sources */,
+				1349BFE729BD912B00710628 /* GnoMeApp.swift in Sources */,
+				13A8E34629DA17CB00312358 /* BlakePost.swift in Sources */,
+				13A8E34729DA17CB00312358 /* Question.swift in Sources */,
+				13A8E34B29DA17D800312358 /* JacobPost.swift in Sources */,
+				1349C00529BE58B200710628 /* SignUp2.swift in Sources */,
+				13A8E34129DA16D900312358 /* Model.swift in Sources */,
+				1349C00329BE52E300710628 /* SignUp1.swift in Sources */,
+				1349C00729BE9C0E00710628 /* SignUp3.swift in Sources */,
+				13A8E34D29DA17D800312358 /* HannahPost.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1349BFEF29BD912F00710628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1349BFF029BD912F00710628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1349BFF229BD912F00710628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA09F0F4C81413A7F40CADB1 /* Pods-GnoMe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GnoMe/Preview Content\"";
+				DEVELOPMENT_TEAM = CU8LB6F7G9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to your library.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Naysa-Alex.GnoMe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1349BFF329BD912F00710628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 399F71042BE45E2E9AB5B760 /* Pods-GnoMe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GnoMe/Preview Content\"";
+				DEVELOPMENT_TEAM = CU8LB6F7G9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to your library.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Naysa-Alex.GnoMe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1349BFDE29BD912B00710628 /* Build configuration list for PBXProject "GnoMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1349BFEF29BD912F00710628 /* Debug */,
+				1349BFF029BD912F00710628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1349BFF129BD912F00710628 /* Build configuration list for PBXNativeTarget "GnoMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1349BFF229BD912F00710628 /* Debug */,
+				1349BFF329BD912F00710628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1349BFDB29BD912B00710628 /* Project object */;
+}
