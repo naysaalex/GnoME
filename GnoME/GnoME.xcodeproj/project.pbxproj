@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134FC81029EF88DC004CA8F3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FC80F29EF88DC004CA8F3 /* LoginView.swift */; };
 		13ADD8A229E530D300BEC79E /* GnoMEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ADD8A129E530D300BEC79E /* GnoMEApp.swift */; };
 		13ADD8A429E530D300BEC79E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ADD8A329E530D300BEC79E /* ContentView.swift */; };
 		13ADD8A629E530D600BEC79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13ADD8A529E530D600BEC79E /* Assets.xcassets */; };
@@ -56,10 +57,13 @@
 		13ADD90A29E5396600BEC79E /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 13ADD90929E5396600BEC79E /* FirebaseRemoteConfigSwift */; };
 		13ADD90C29E5396600BEC79E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 13ADD90B29E5396600BEC79E /* FirebaseStorage */; };
 		13ADD90E29E5396600BEC79E /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 13ADD90D29E5396600BEC79E /* FirebaseStorageCombine-Community */; };
+		13BEAD8429EFAC35005FB2BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BEAD8329EFAC35005FB2BF /* User.swift */; };
+		13C3D77F29EFBA8600749D65 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3D77E29EFBA8600749D65 /* LoadingView.swift */; };
 		691B0CAC4ED9CDA713FFE044 /* Pods_GnoME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4715296F47587E4EAF0134CC /* Pods_GnoME.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		134FC80F29EF88DC004CA8F3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		13ADD89E29E530D300BEC79E /* GnoME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GnoME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ADD8A129E530D300BEC79E /* GnoMEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnoMEApp.swift; sourceTree = "<group>"; };
 		13ADD8A329E530D300BEC79E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		13ADD8D229E537A300BEC79E /* userSetup.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userSetup.JSON; sourceTree = "<group>"; };
 		13ADD8D329E537A300BEC79E /* data.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.JSON; sourceTree = "<group>"; };
 		13ADD8D429E537A300BEC79E /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		13BEAD8329EFAC35005FB2BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		13C3D77E29EFBA8600749D65 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4715296F47587E4EAF0134CC /* Pods_GnoME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GnoME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FBBF7E80D1023BD22E7718 /* Pods-GnoME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnoME.release.xcconfig"; path = "Target Support Files/Pods-GnoME/Pods-GnoME.release.xcconfig"; sourceTree = "<group>"; };
 		E0F52BA46A27EFF828639FA3 /* Pods-GnoME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnoME.debug.xcconfig"; path = "Target Support Files/Pods-GnoME/Pods-GnoME.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +191,7 @@
 				13ADD8C129E533C600BEC79E /* HomeScreen.swift */,
 				13ADD8C329E533D800BEC79E /* LeaderBoard.swift */,
 				13ADD8C529E533ED00BEC79E /* UserProfile.swift */,
+				13C3D77E29EFBA8600749D65 /* LoadingView.swift */,
 			);
 			path = MainScreens;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 				13ADD8B729E5337E00BEC79E /* SignUp1.swift */,
 				13ADD8B929E5338D00BEC79E /* SignUp2.swift */,
 				13ADD8BB29E5339B00BEC79E /* SignUp3.swift */,
+				134FC80F29EF88DC004CA8F3 /* LoginView.swift */,
 			);
 			path = SetUp;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 				13ADD8D329E537A300BEC79E /* data.JSON */,
 				13ADD8D429E537A300BEC79E /* Model.swift */,
 				13ADD8D229E537A300BEC79E /* userSetup.JSON */,
+				13BEAD8329EFAC35005FB2BF /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -382,11 +391,14 @@
 				13ADD8C229E533C600BEC79E /* HomeScreen.swift in Sources */,
 				13ADD8D729E537A300BEC79E /* Model.swift in Sources */,
 				13ADD8CE29E5346400BEC79E /* JacobPost.swift in Sources */,
+				134FC81029EF88DC004CA8F3 /* LoginView.swift in Sources */,
+				13C3D77F29EFBA8600749D65 /* LoadingView.swift in Sources */,
 				13ADD8A229E530D300BEC79E /* GnoMEApp.swift in Sources */,
 				13ADD8CC29E5346400BEC79E /* Question.swift in Sources */,
 				13ADD8B829E5337E00BEC79E /* SignUp1.swift in Sources */,
 				13ADD8BA29E5338D00BEC79E /* SignUp2.swift in Sources */,
 				13ADD8D029E5346400BEC79E /* HannahPost.swift in Sources */,
+				13BEAD8429EFAC35005FB2BF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

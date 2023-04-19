@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct GnoMeApp: App {
     //@StateObject private var dataController = DataController()
     
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             WelcomeScreen()

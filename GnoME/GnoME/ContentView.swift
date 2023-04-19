@@ -11,8 +11,14 @@ struct NavigationButton: View {
     let iconName: String
     let pageIndex: Int
     @Binding var selectedPageIndex: Int
+    @AppStorage("log_status") var logStatus: Bool = false
     
     var body: some View {
+        if logStatus{
+            UserProfile()
+        }else{
+            LoginView()
+        }
         Button(action: {
             self.selectedPageIndex = self.pageIndex
         }, label: {
