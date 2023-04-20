@@ -17,7 +17,7 @@ struct GnoMeApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            WelcomeScreen()
+            LoginView()
                 //.environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
