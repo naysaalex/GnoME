@@ -52,7 +52,6 @@
 		13BE5DBE29F641F800461878 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE5DBD29F641F800461878 /* ProfileView.swift */; };
 		13BEAD8429EFAC35005FB2BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BEAD8329EFAC35005FB2BF /* User.swift */; };
 		13C3D77F29EFBA8600749D65 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3D77E29EFBA8600749D65 /* LoadingView.swift */; };
-		691B0CAC4ED9CDA713FFE044 /* Pods_GnoME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4715296F47587E4EAF0134CC /* Pods_GnoME.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,9 +85,6 @@
 		13BE5DBD29F641F800461878 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		13BEAD8329EFAC35005FB2BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		13C3D77E29EFBA8600749D65 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		4715296F47587E4EAF0134CC /* Pods_GnoME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GnoME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52FBBF7E80D1023BD22E7718 /* Pods-GnoME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnoME.release.xcconfig"; path = "Target Support Files/Pods-GnoME/Pods-GnoME.release.xcconfig"; sourceTree = "<group>"; };
-		E0F52BA46A27EFF828639FA3 /* Pods-GnoME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnoME.debug.xcconfig"; path = "Target Support Files/Pods-GnoME/Pods-GnoME.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +105,6 @@
 				13ADD90029E5396600BEC79E /* FirebaseInstallations in Frameworks */,
 				13ADD90C29E5396600BEC79E /* FirebaseStorage in Frameworks */,
 				13ADD8EC29E5396600BEC79E /* FirebaseDatabase in Frameworks */,
-				691B0CAC4ED9CDA713FFE044 /* Pods_GnoME.framework in Frameworks */,
 				13ADD8E629E5396600BEC79E /* FirebaseAuth in Frameworks */,
 				13ADD8F029E5396600BEC79E /* FirebaseDynamicLinks in Frameworks */,
 				13ADD8F229E5396600BEC79E /* FirebaseFirestore in Frameworks */,
@@ -124,8 +119,6 @@
 			children = (
 				13ADD8A029E530D300BEC79E /* GnoME */,
 				13ADD89F29E530D300BEC79E /* Products */,
-				7AB8484B66E99867EFBFE465 /* Pods */,
-				39240FE3A9E712D5EC75DAFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,23 +214,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		39240FE3A9E712D5EC75DAFB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4715296F47587E4EAF0134CC /* Pods_GnoME.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7AB8484B66E99867EFBFE465 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E0F52BA46A27EFF828639FA3 /* Pods-GnoME.debug.xcconfig */,
-				52FBBF7E80D1023BD22E7718 /* Pods-GnoME.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,7 +221,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13ADD8AC29E530D600BEC79E /* Build configuration list for PBXNativeTarget "GnoME" */;
 			buildPhases = (
-				CB36F782116B0AF2CE1237F2 /* [CP] Check Pods Manifest.lock */,
 				13ADD89A29E530D300BEC79E /* Sources */,
 				13ADD89B29E530D300BEC79E /* Frameworks */,
 				13ADD89C29E530D300BEC79E /* Resources */,
@@ -302,8 +277,8 @@
 			);
 			mainGroup = 13ADD89529E530D300BEC79E;
 			packageReferences = (
-				13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				13B96CC129F6569200AA5268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
+				13B96CC129F6569200AA5268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI.git" */,
 			);
 			productRefGroup = 13ADD89F29E530D300BEC79E /* Products */;
 			projectDirPath = "";
@@ -328,31 +303,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CB36F782116B0AF2CE1237F2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GnoME-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13ADD89A29E530D300BEC79E /* Sources */ = {
@@ -505,7 +455,6 @@
 		};
 		13ADD8AD29E530D600BEC79E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0F52BA46A27EFF828639FA3 /* Pods-GnoME.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -534,7 +483,6 @@
 		};
 		13ADD8AE29E530D600BEC79E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52FBBF7E80D1023BD22E7718 /* Pods-GnoME.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -585,7 +533,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -593,7 +541,7 @@
 				minimumVersion = 9.0.0;
 			};
 		};
-		13B96CC129F6569200AA5268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		13B96CC129F6569200AA5268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
 			requirement = {
@@ -606,82 +554,82 @@
 /* Begin XCSwiftPackageProductDependency section */
 		13ADD8D929E5396600BEC79E /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseAnalytics;
 		};
 		13ADD8E529E5396600BEC79E /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseAuth;
 		};
 		13ADD8E929E5396600BEC79E /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseCrashlytics;
 		};
 		13ADD8EB29E5396600BEC79E /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseDatabase;
 		};
 		13ADD8ED29E5396600BEC79E /* FirebaseDatabaseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseDatabaseSwift;
 		};
 		13ADD8EF29E5396600BEC79E /* FirebaseDynamicLinks */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseDynamicLinks;
 		};
 		13ADD8F129E5396600BEC79E /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestore;
 		};
 		13ADD8F329E5396600BEC79E /* FirebaseFirestoreCombine-Community */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseFirestoreCombine-Community";
 		};
 		13ADD8F529E5396600BEC79E /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestoreSwift;
 		};
 		13ADD8F729E5396600BEC79E /* FirebaseFunctions */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFunctions;
 		};
 		13ADD8FB29E5396600BEC79E /* FirebaseInAppMessaging-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseInAppMessaging-Beta";
 		};
 		13ADD8FD29E5396600BEC79E /* FirebaseInAppMessagingSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = "FirebaseInAppMessagingSwift-Beta";
 		};
 		13ADD8FF29E5396600BEC79E /* FirebaseInstallations */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseInstallations;
 		};
 		13ADD90329E5396600BEC79E /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseMessaging;
 		};
 		13ADD90B29E5396600BEC79E /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13ADD8D829E5396600BEC79E /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseStorage;
 		};
 		13B96CC229F6569200AA5268 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13B96CC129F6569200AA5268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			package = 13B96CC129F6569200AA5268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI.git" */;
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
