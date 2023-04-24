@@ -9,13 +9,19 @@ import SwiftUI
 
 struct LandingPage: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView{
+            Text("Recent Post's")
+                .tabItem {
+                    Image(systemName: "rectangle.stack")
+                    Text("Post's")
+                }
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.circle.fill")
+                    Text("Profile")
+                }
         }
-        .padding()
+        .tint(.black)
     }
 }
 

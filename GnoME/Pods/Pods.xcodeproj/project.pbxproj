@@ -14,11 +14,11 @@
 
 /* Begin PBXFileReference section */
 		2EE002282D09E392F60B834C32BA953C /* Pods-GnoME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GnoME.debug.xcconfig"; sourceTree = "<group>"; };
-		43611FBFBDED94E8C159C14BA6EB721E /* Pods_GnoME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GnoME.framework; path = "Pods-GnoME.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43611FBFBDED94E8C159C14BA6EB721E /* Pods_GnoME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GnoME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F3F3D8D5037348C66BB92E049E97F36 /* Pods-GnoME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GnoME.release.xcconfig"; sourceTree = "<group>"; };
 		81BDB8175E45E8A1F03F5B6702770BEB /* Pods-GnoME.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GnoME.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CD290C6AFBD44730D89C84AA574F492A /* Pods-GnoME-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GnoME-dummy.m"; sourceTree = "<group>"; };
 		D99B0D430A10F157551F0DF1445A7DFD /* Pods-GnoME-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GnoME-acknowledgements.plist"; sourceTree = "<group>"; };
 		ECAB1AC27D8D991F06C7BCD913DA9BDE /* Pods-GnoME-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GnoME-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -146,6 +146,9 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			packageReferences = (
+				13B96CC429F6572900AA5268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 5DB74404FF6B454D2F64FC1922CB23F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -400,6 +403,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13B96CC429F6572900AA5268 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
