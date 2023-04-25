@@ -17,52 +17,76 @@ struct ProfileView: View {
     @State var showError: Bool = false
     @State var isLoading: Bool = false
     var body: some View {
-        NavigationStack{
-            VStack{
-                if let myProfile{
-                    ReusableProfileContent(user: myProfile)
-                        .refreshable {
-                            self.myProfile = nil
-                            await fetchUserData()
-                        }
-                }else{
-                    ProgressView()
-                }
-            }
-//            ScrollView(.vertical, showsIndicators: false)
-//            {
-//                if let myProfile{
-//                    Text(myProfile.username)
+//        ZStack{
+//            Color("gnomeBlue")
+//                .ignoresSafeArea()
+//            VStack{
+//                HStack{
+//                    Image("title")
+//                        .resizable()
+//                        .frame(width: 120.0, height: 50.0)
+//                    //.padding(, 10)
+//                    Spacer()
+//                    Image("circleIcon")
+//                        .resizable()
+//                        .frame(width:60.0,height:60.0)
+//                    //.padding(.top)
 //                }
-//            }
-            
-            .navigationTitle("My Profile")
-            .toolbar{
-                ToolbarItem(placement: .navigationBarTrailing){
-                    Menu{
-                        Button("Logout", action: logOutUser)
-                        Button("Delete Account", role: .destructive, action: deleteAccount)
-                    }label: {
-                        Image(systemName: "ellipsis")
-                            .rotationEffect(.init(degrees: 90))
-                            .tint(.black)
-                            .scaleEffect(0.8)
+//                .padding(.leading, 10)
+//                .padding(.horizontal, 10)
+                NavigationStack{
+                    Color("gnomeBlue")
+                        .ignoresSafeArea()
+                    VStack{
+                        
+                        if let myProfile{
+                            ReusableProfileContent(user: myProfile)
+                                .refreshable {
+                                    self.myProfile = nil
+                                    await fetchUserData()
+                                }
+                        }else{
+                            ProgressView()
+                        }
+                    }
+                    //            ScrollView(.vertical, showsIndicators: false)
+                    //            {
+                    //                if let myProfile{
+                    //                    Text(myProfile.username)
+                    //                }
+                    //            }
+                    
+                    .navigationTitle("My Profile")
+                    .toolbar{
+                        ToolbarItem(placement: .navigationBarTrailing){
+                            Menu{
+                                Button("Logout", action: logOutUser)
+                                Button("Delete Account", role: .destructive, action: deleteAccount)
+                            }label: {
+                                Image(systemName: "ellipsis")
+                                    .rotationEffect(.init(degrees: 90))
+                                    .tint(.black)
+                                    .scaleEffect(0.8)
+                            }
+                        }
                     }
                 }
-            }
-        }
-        .overlay{
-            LoadingView(show: $isLoading)
-        }
-        .alert(errorMessage, isPresented: $showError){
-        }
-        .task{
-            if myProfile != nil{return}
-            await fetchUserData()
-        }
+                .overlay{
+                    LoadingView(show: $isLoading)
+                }
+                .alert(errorMessage, isPresented: $showError){
+                }
+                .task{
+                    if myProfile != nil{return}
+                    await fetchUserData()
+                }
+            //}
+        //}
     }
     
     func fetchUserData() async{
+//        Color("gnomeBlue")
+//            .ignoresSafeArea()
         guard let userUID = Auth.auth().currentUser?.uid else{return}
         guard let user = try? await Firestore.firestore().collection("Users").document(userUID).getDocument(as: User.self) else{return}
         await MainActor.run(body: {

@@ -30,57 +30,77 @@ struct RegisterView: View{
     @AppStorage("user_UID") var userUID: String = ""
     
     var body: some View{
-        VStack(spacing: 10){
-            Text("Lets Register\nAccount")
-                .font(.largeTitle.bold())
-                .hAlign(.leading)
+        ZStack{
+            Color("gnomeBlue")
+                .ignoresSafeArea()
             
-            Text("Hello user, have a wonderful journey")
-                .font(.title3)
-                .hAlign(.leading)
-            
-            //for smaller size optimization
-            ViewThatFits{
-                ScrollView(.vertical, showsIndicators: false){
+            VStack(spacing: 10){
+                HStack{
+                    Image("title")
+                        .resizable()
+                        .frame(width: 120.0, height: 50.0)
+                        //.padding(.top)
+                    Spacer()
+                    Image("circleIcon")
+                        .resizable()
+                        .frame(width:60.0,height:60.0)
+                        //.padding(.top)
+                }
+                .padding(.top, -20)
+                
+                Text("Register Here")
+                    .font(.largeTitle.bold())
+                    .hAlign(.leading)
+                    .foregroundColor(.white)
+                
+                Text("Let people Gno you!")
+                    .font(.title3)
+                    .hAlign(.leading)
+                    .foregroundColor(.white)
+                
+                //for smaller size optimization
+                ViewThatFits{
+                    ScrollView(.vertical, showsIndicators: false){
+                        HelperView()
+                    }
+                    
                     HelperView()
                 }
                 
-                HelperView()
-            }
-            
-            HStack{
-                Text("Already have an account?")
-                    .foregroundColor(.gray)
-                
-                Button("Login Now"){
-                    dismiss()
+                HStack{
+                    Text("Already have an account?")
+                        .foregroundColor(.gray)
+                    
+                    Button("Login Now"){
+                        dismiss()
+                    }
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
                 }
-                .fontWeight(.bold)
-                .foregroundColor(.black)
+                .vAlign(.bottom)
+                .font(.callout)
             }
-            .vAlign(.bottom)
-            .font(.callout)
-        }
-        .vAlign(.top)
-        .padding(15)
-        .overlay(content:{
-            LoadingView(show: $isLoading)
-        })
-        .photosPicker(isPresented: $showImagePicker, selection: $photoItem)
-        .onChange(of: photoItem){ newValue in
-            if let newValue{
-                Task{
-                    do{
-                        guard let imageData = try await newValue.loadTransferable(type: Data.self) else {return}
-                        await MainActor.run(body: {
-                            userProfilePicData = imageData
-                        })
-                        
-                    }catch{}
+            .vAlign(.top)
+            .padding(15)
+            .overlay(content:{
+                LoadingView(show: $isLoading)
+            })
+            .photosPicker(isPresented: $showImagePicker, selection: $photoItem)
+            .onChange(of: photoItem){ newValue in
+                if let newValue{
+                    Task{
+                        do{
+                            guard let imageData = try await newValue.loadTransferable(type: Data.self) else {return}
+                            await MainActor.run(body: {
+                                userProfilePicData = imageData
+                            })
+                            
+                        }catch{}
+                    }
                 }
             }
+            .alert(errorMessage, isPresented: $showError, actions: {})
         }
-        .alert(errorMessage, isPresented: $showError, actions: {})
     }
     
     @ViewBuilder
@@ -132,28 +152,33 @@ struct RegisterView: View{
             TextField("Username", text: $username)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
+                .background(Color.white)
             
             TextField("Email", text: $emailID)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
+                .background(Color.white)
             
             SecureField("Password", text: $password)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
+                .background(Color.white)
             
             TextField("About You", text: $userBio, axis: .vertical)
                 .frame(minHeight: 100, alignment: .top)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
+                .background(Color.white)
             
             TextField("Bio Link (Optional)", text: $userBioLink)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
+                .background(Color.white)
             
             Button(action: registerUser){
                 Text("Sign up")
-                    .foregroundColor(.white)
-                    .fillView(.black)
+                    .foregroundColor(.black)
+                    .fillView(Color("gnomeBeige"))
                     .hAlign(.center)
             }
             .disableWithOpacity(username == "" || userBio == "" || emailID == "" || password == "" || userProfilePicData == nil)

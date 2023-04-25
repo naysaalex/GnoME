@@ -43,6 +43,10 @@ struct ContentView: View {
             LoginView()
         }
         
+//        CreateNewPost{ _ in
+//
+//        }
+        
         //        VStack(spacing: 0) {
         //            Spacer()
         //            getPageView()

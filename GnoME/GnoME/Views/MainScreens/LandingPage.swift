@@ -10,7 +10,7 @@ import SwiftUI
 struct LandingPage: View {
     var body: some View {
         TabView{
-            Text("Recent Post's")
+            PostsView()
                 .tabItem {
                     Image(systemName: "rectangle.stack")
                     Text("Post's")
