@@ -47,6 +47,8 @@
 		13B3F92729F74031003332FB /* CreateNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3F92629F74031003332FB /* CreateNewPost.swift */; };
 		13B6E04329F743CF004CD4FF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E04229F743CF004CD4FF /* Post.swift */; };
 		13B6E04529F75C3E004CD4FF /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E04429F75C3E004CD4FF /* PostsView.swift */; };
+		13B6E04829F8C8F8004CD4FF /* ReusablePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E04729F8C8F8004CD4FF /* ReusablePostsView.swift */; };
+		13B6E04A29F8CC9B004CD4FF /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E04929F8CC9B004CD4FF /* PostCardView.swift */; };
 		13B96CC029F6544000AA5268 /* ReusableProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B96CBF29F6544000AA5268 /* ReusableProfileContent.swift */; };
 		13B96CC329F6569200AA5268 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 13B96CC229F6569200AA5268 /* SDWebImageSwiftUI */; };
 		13BE5DBE29F641F800461878 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE5DBD29F641F800461878 /* ProfileView.swift */; };
@@ -81,6 +83,8 @@
 		13B3F92629F74031003332FB /* CreateNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPost.swift; sourceTree = "<group>"; };
 		13B6E04229F743CF004CD4FF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		13B6E04429F75C3E004CD4FF /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		13B6E04729F8C8F8004CD4FF /* ReusablePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePostsView.swift; sourceTree = "<group>"; };
+		13B6E04929F8CC9B004CD4FF /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
 		13B96CBF29F6544000AA5268 /* ReusableProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProfileContent.swift; sourceTree = "<group>"; };
 		13BE5DBD29F641F800461878 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		13BEAD8329EFAC35005FB2BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				13ADD8AF29E5322A00BEC79E /* GoogleService-Info.plist */,
 				13ADD8A129E530D300BEC79E /* GnoMEApp.swift */,
 				13ADD8A329E530D300BEC79E /* ContentView.swift */,
+				13B6E04629F8C76B004CD4FF /* old */,
 				13ADD8B129E5333200BEC79E /* Views */,
 				13ADD8B429E5335400BEC79E /* Resources */,
 				13ADD8D129E5375300BEC79E /* Models */,
@@ -171,8 +176,9 @@
 				13ADD8C129E533C600BEC79E /* HomeScreen.swift */,
 				13ADD8C329E533D800BEC79E /* LeaderBoard.swift */,
 				13ADD8C529E533ED00BEC79E /* UserProfile.swift */,
-				139D79B929F4D612007C7FFF /* RegisterView.swift */,
 				13B6E04429F75C3E004CD4FF /* PostsView.swift */,
+				13B6E04729F8C8F8004CD4FF /* ReusablePostsView.swift */,
+				13B6E04929F8CC9B004CD4FF /* PostCardView.swift */,
 			);
 			path = MainScreens;
 			sourceTree = "<group>";
@@ -180,11 +186,8 @@
 		13ADD8B329E5334300BEC79E /* SetUp */ = {
 			isa = PBXGroup;
 			children = (
-				13ADD8B529E5337000BEC79E /* WelcomeScreen.swift */,
-				13ADD8B729E5337E00BEC79E /* SignUp1.swift */,
-				13ADD8B929E5338D00BEC79E /* SignUp2.swift */,
-				13ADD8BB29E5339B00BEC79E /* SignUp3.swift */,
 				134FC80F29EF88DC004CA8F3 /* LoginView.swift */,
+				139D79B929F4D612007C7FFF /* RegisterView.swift */,
 			);
 			path = SetUp;
 			sourceTree = "<group>";
@@ -192,10 +195,6 @@
 		13ADD8B429E5335400BEC79E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				13ADD8C829E5346300BEC79E /* BlakePost.swift */,
-				13ADD8CB29E5346400BEC79E /* HannahPost.swift */,
-				13ADD8C929E5346300BEC79E /* JacobPost.swift */,
-				13ADD8CA29E5346300BEC79E /* NaysaPost.swift */,
 				13ADD8C729E5346300BEC79E /* Question.swift */,
 				13C3D77E29EFBA8600749D65 /* LoadingView.swift */,
 				139D79BB29F63641007C7FFF /* View+Extensions.swift */,
@@ -212,6 +211,21 @@
 				13B6E04229F743CF004CD4FF /* Post.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		13B6E04629F8C76B004CD4FF /* old */ = {
+			isa = PBXGroup;
+			children = (
+				13ADD8B529E5337000BEC79E /* WelcomeScreen.swift */,
+				13ADD8B729E5337E00BEC79E /* SignUp1.swift */,
+				13ADD8B929E5338D00BEC79E /* SignUp2.swift */,
+				13ADD8BB29E5339B00BEC79E /* SignUp3.swift */,
+				13ADD8C829E5346300BEC79E /* BlakePost.swift */,
+				13ADD8CB29E5346400BEC79E /* HannahPost.swift */,
+				13ADD8C929E5346300BEC79E /* JacobPost.swift */,
+				13ADD8CA29E5346300BEC79E /* NaysaPost.swift */,
+			);
+			path = old;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +333,7 @@
 				13ADD8A429E530D300BEC79E /* ContentView.swift in Sources */,
 				13ADD8C629E533ED00BEC79E /* UserProfile.swift in Sources */,
 				13ADD8C429E533D800BEC79E /* LeaderBoard.swift in Sources */,
+				13B6E04A29F8CC9B004CD4FF /* PostCardView.swift in Sources */,
 				13ADD8C229E533C600BEC79E /* HomeScreen.swift in Sources */,
 				13ADD8CE29E5346400BEC79E /* JacobPost.swift in Sources */,
 				134FC81029EF88DC004CA8F3 /* LoginView.swift in Sources */,
@@ -329,6 +344,7 @@
 				13ADD8CC29E5346400BEC79E /* Question.swift in Sources */,
 				13ADD8B829E5337E00BEC79E /* SignUp1.swift in Sources */,
 				13ADD8BA29E5338D00BEC79E /* SignUp2.swift in Sources */,
+				13B6E04829F8C8F8004CD4FF /* ReusablePostsView.swift in Sources */,
 				13B6E04529F75C3E004CD4FF /* PostsView.swift in Sources */,
 				13ADD8D029E5346400BEC79E /* HannahPost.swift in Sources */,
 				13B96CC029F6544000AA5268 /* ReusableProfileContent.swift in Sources */,
@@ -461,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GnoME/Preview Content\"";
+				DEVELOPMENT_TEAM = CU8LB6F7G9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -489,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GnoME/Preview Content\"";
+				DEVELOPMENT_TEAM = CU8LB6F7G9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

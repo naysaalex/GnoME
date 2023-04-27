@@ -153,27 +153,32 @@ struct RegisterView: View{
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
                 .background(Color.white)
+                .foregroundColor(Color.black)
             
             TextField("Email", text: $emailID)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
                 .background(Color.white)
+                .foregroundColor(Color.black)
             
             SecureField("Password", text: $password)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
                 .background(Color.white)
+                .foregroundColor(Color.black)
             
             TextField("About You", text: $userBio, axis: .vertical)
                 .frame(minHeight: 100, alignment: .top)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
                 .background(Color.white)
+                .foregroundColor(Color.black)
             
             TextField("Bio Link (Optional)", text: $userBioLink)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
                 .background(Color.white)
+                .foregroundColor(Color.black)
             
             Button(action: registerUser){
                 Text("Sign up")
@@ -201,9 +206,11 @@ struct RegisterView: View{
                 //downloading photo url
                 let downloadURL = try await storageRef.downloadURL()
                 //creating a user firestore object
-                let user = User(username: username, userBio: userBio, userBioLink: userBioLink, userUID: userUID, userEmail: emailID, userProfileURL: downloadURL)
+                let user = User(username: username, userBio: userBio, userBioLink: userBioLink, userUID: userUID, userEmail: emailID, userProfileURL: downloadURL.absoluteString )
                 //saving user doc into firestore database
-                let _ = try Firestore.firestore().collection("Users").document(userUID).setData(from: user, completion: { error in
+                //let userRef = db.collection("users").document(user.uid)
+                //userRef.setData(user.asDictionary)
+                let _ = try Firestore.firestore().collection("Users").document(userUID).setData(user.asDictionary, completion: { error in
                     if error == nil{
                         print("Saved Successfully")
                         userNameStored = username
@@ -232,5 +239,19 @@ struct RegisterView: View{
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
+    }
+}
+
+extension User {
+    var asDictionary: [String: Any] {
+        return [
+            "username": self.username,
+            "userBio": self.userBio,
+            "userBioLink": self.userBioLink,
+            "userUID": self.userUID,
+            "userEmail": self.userEmail,
+            "userProfileURL": self.userProfileURL ?? ""
+            // Add other properties as needed
+        ]
     }
 }

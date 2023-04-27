@@ -14,7 +14,7 @@ struct ReusableProfileContent: View {
         ScrollView(.vertical, showsIndicators: false){
             LazyVStack{
                 HStack(spacing: 12){
-                    WebImage(url: user.userProfileURL).placeholder{
+                    WebImage(url: URL(string: user.userProfileURL ?? "")).placeholder{
                         Image("Nullpfp")
                             .resizable()
                     }

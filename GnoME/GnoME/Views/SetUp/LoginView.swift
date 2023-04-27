@@ -10,9 +10,6 @@ import Firebase
 import FirebaseFirestore
 import FirebaseStorage
 
-struct CustomColor{
-    
-}
 
 struct LoginView: View {
     @State var emailID: String = ""
@@ -66,11 +63,13 @@ struct LoginView: View {
                         .border(1, .gray.opacity(0.5))
                         //.padding(.top, 25)
                         .background(Color.white)
+                        .foregroundColor(Color.black)
                     
                     SecureField("Password", text: $password)
                         .textContentType(.emailAddress)
                         .border(1, .gray.opacity(0.5))
                         .background(Color.white)
+                        .foregroundColor(Color.black)
                     
                     Button("Reset password?", action: resetPassword)
                         .font(.callout)
@@ -135,7 +134,8 @@ struct LoginView: View {
         await MainActor.run(body: {
             userUID = userID
             userNameStored = user.username
-            profileURL = user.userProfileURL
+            //let userProfileURLString = user.userProfileURL as? String
+            profileURL = URL(string: user.userProfileURL ?? "")
             logStatus = true
         })
     }

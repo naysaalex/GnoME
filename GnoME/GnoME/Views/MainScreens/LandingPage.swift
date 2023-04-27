@@ -13,12 +13,12 @@ struct LandingPage: View {
             PostsView()
                 .tabItem {
                     Image(systemName: "rectangle.stack")
-                    Text("Post's")
+                    //Text("Post's")
                 }
             ProfileView()
                 .tabItem {
-                    Image(systemName: "person.circle.fill")
-                    Text("Profile")
+                    Image("Profile-Selected")//systemName: "person.circle.fill")
+                    //Text("Profile")
                 }
         }
         .tint(.black)

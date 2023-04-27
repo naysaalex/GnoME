@@ -15,7 +15,7 @@ struct User: Identifiable, Codable {
     var userBioLink: String
     var userUID: String
     var userEmail: String
-    var userProfileURL: URL
+    var userProfileURL: String?
     
     enum CodingKeys: CodingKey{
         case id

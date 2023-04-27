@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PostsView: View {
+    @State private var recentsPosts: [Post] = []
     @State private var createNewPost: Bool = false
     var body: some View {
         ZStack{
@@ -28,23 +29,28 @@ struct PostsView: View {
                 .padding(.leading, 10)
                 .padding(.horizontal, 10)
                 
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                    .hAlign(.center).vAlign(.center)
-                    .overlay(alignment: .bottomTrailing){
-                        Button{
-                            createNewPost.toggle()
-                        }label: {
-                            Image(systemName: "plus")
-                                .font(.title3)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.white)
-                                .padding(13)
-                                .background(.black, in: Circle())
+                NavigationStack{
+                    ReusablePostsView(posts: $recentsPosts)
+                        .hAlign(.center).vAlign(.center)
+                        .overlay(alignment: .bottomTrailing){
+                            Button{
+                                createNewPost.toggle()
+                            }label: {
+                                Image(systemName: "plus")
+                                    .font(.title3)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                    .padding(13)
+                                    .background(.black, in: Circle())
+                            }
+                            .padding(15)
                         }
-                        .padding(15)
-                    }
+                        .navigationTitle("Post's")
+                }
                     .fullScreenCover(isPresented: $createNewPost) {
                         CreateNewPost{ post in
+                            //adding post at top of recent
+                            recentsPosts.insert(post, at:0)
                         }
                     }
             }
