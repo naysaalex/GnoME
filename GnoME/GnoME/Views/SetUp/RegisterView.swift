@@ -167,7 +167,7 @@ struct RegisterView: View{
                 .background(Color.white)
                 .foregroundColor(Color.black)
             
-            TextField("About You", text: $userBio, axis: .vertical)
+            TextField("One thng I want people to gno about me is..", text: $userBio, axis: .vertical)
                 .frame(minHeight: 100, alignment: .top)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))

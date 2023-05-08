@@ -19,56 +19,62 @@ struct PostCardView: View {
     @AppStorage("user_UID") private var userUID: String = ""
     @State private var docListner: ListenerRegistration?
     var body: some View {
-        HStack(alignment: .top, spacing:12){
-            WebImage(url: post.userProfileURL)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 35, height: 35)
-                .clipShape(Circle())
+        ZStack{
+            Color("gnomeGray")
+                .ignoresSafeArea()
             
-            VStack(alignment: .leading, spacing: 6){
-                Text(post.userName)
-                    .font(.callout)
-                    .fontWeight(.semibold)
-                Text(post.publishedDate.formatted(date: .numeric, time: .shortened))
-                    .font(.caption2)
-                    .foregroundColor(.gray)
-                Text(post.text)
-                    .textSelection(.enabled)
-                    .padding(.vertical,8)
+            HStack(alignment: .top, spacing:12){
+                WebImage(url: post.userProfileURL)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 35, height: 35)
+                    .clipShape(Circle())
                 
-                //post image if any
-                if let postImageURL = post.imageURL{
-                    GeometryReader{
-                        let size = $0.size
-                        WebImage(url: postImageURL)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: size.width, height: size.height)
-                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                VStack(alignment: .leading, spacing: 6){
+                    Text(post.userName)
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                    Text(post.publishedDate.formatted(date: .numeric, time: .shortened))
+                        .font(.caption2)
+                        .foregroundColor(.gray)
+                    Text(post.text)
+                        .textSelection(.enabled)
+                        .padding(.vertical,8)
+                    
+                    //post image if any
+                    if let postImageURL = post.imageURL{
+                        GeometryReader{
+                            let size = $0.size
+                            WebImage(url: postImageURL)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: size.width, height: size.height)
+                                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                        }
+                        .frame(height: 200)
                     }
-                    .frame(height: 200)
+                    PostInteraction()
                 }
-                PostInteraction()
             }
-        }
-        .hAlign(.leading)
-        .overlay(alignment: .topTrailing, content: {
-            //display delete button
-            if post.userUID == userUID{
-                Menu{
-                    Button("Delete Post", role: .destructive, action: deletePost)
-                }label:{
-                    Image(systemName: "ellipsis")
-                        .font(.caption)
-                        .rotationEffect(.init(degrees: -90))
-                        .foregroundColor(.black)
-                        .padding(8)
-                        .contentShape(Rectangle())
+            .padding([.top,.leading, .trailing], 8)
+            .hAlign(.leading)
+            .overlay(alignment: .topTrailing, content: {
+                //display delete button
+                if post.userUID == userUID{
+                    Menu{
+                        Button("Delete Post", role: .destructive, action: deletePost)
+                    }label:{
+                        Image(systemName: "ellipsis")
+                            .font(.caption)
+                            .rotationEffect(.init(degrees: -90))
+                            .foregroundColor(.black)
+                            .padding(8)
+                            .contentShape(Rectangle())
+                    }
+                    .offset(x: 8)
                 }
-                .offset(x: 8)
-            }
-        })
+            })}
+        .cornerRadius(10)
         .onAppear{
             //adding only once
             if docListner == nil{
@@ -111,14 +117,14 @@ struct PostCardView: View {
                 .font(.caption)
                 .foregroundColor(.gray)
             
-            Button(action: dislikePost){
-                Image(systemName: post.dislikedIDs.contains(userUID) ? "hand.thumbsdown.fill" : "hand.thumbsdown")
-            }
-            .padding(.leading, 25)
-            
-            Text("\(post.dislikedIDs.count)")
-                .font(.caption)
-                .foregroundColor(.gray)
+//            Button(action: dislikePost){
+//                Image(systemName: post.dislikedIDs.contains(userUID) ? "hand.thumbsdown.fill" : "hand.thumbsdown")
+//            }
+//            .padding(.leading, 25)
+//
+//            Text("\(post.dislikedIDs.count)")
+//                .font(.caption)
+//                .foregroundColor(.gray)
         }
         .foregroundColor(.black)
         .padding(.vertical, 8)

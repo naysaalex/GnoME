@@ -34,43 +34,45 @@ struct ProfileView: View {
 //                }
 //                .padding(.leading, 10)
 //                .padding(.horizontal, 10)
-                NavigationStack{
-                    Color("gnomeBlue")
-                        .ignoresSafeArea()
-                    VStack{
-                        
-                        if let myProfile{
-                            ReusableProfileContent(user: myProfile)
-                                .refreshable {
-                                    self.myProfile = nil
-                                    await fetchUserData()
-                                }
-                        }else{
-                            ProgressView()
-                        }
-                    }
-                    //            ScrollView(.vertical, showsIndicators: false)
-                    //            {
-                    //                if let myProfile{
-                    //                    Text(myProfile.username)
-                    //                }
-                    //            }
+        NavigationStack{
+            ZStack{
+                Color("gnomeBlue")
+                    .ignoresSafeArea()
+                VStack{
                     
-                    .navigationTitle("My Profile")
-                    .toolbar{
-                        ToolbarItem(placement: .navigationBarTrailing){
-                            Menu{
-                                Button("Logout", action: logOutUser)
-                                Button("Delete Account", role: .destructive, action: deleteAccount)
-                            }label: {
-                                Image(systemName: "ellipsis")
-                                    .rotationEffect(.init(degrees: 90))
-                                    .tint(.black)
-                                    .scaleEffect(0.8)
+                    if let myProfile{
+                        ReusableProfileContent(user: myProfile)
+                            .refreshable {
+                                self.myProfile = nil
+                                await fetchUserData()
                             }
+                    }else{
+                        ProgressView()
+                    }
+                }
+                //            ScrollView(.vertical, showsIndicators: false)
+                //            {
+                //                if let myProfile{
+                //                    Text(myProfile.username)
+                //                }
+                //            }
+                
+                .navigationTitle("My Profile")
+                .toolbar{
+                    ToolbarItem(placement: .navigationBarTrailing){
+                        Menu{
+                            Button("Logout", action: logOutUser)
+                            Button("Delete Account", role: .destructive, action: deleteAccount)
+                        }label: {
+                            Image(systemName: "ellipsis")
+                                .rotationEffect(.init(degrees: 90))
+                                .tint(.black)
+                                .scaleEffect(0.8)
                         }
                     }
                 }
+            }
+        }
                 .overlay{
                     LoadingView(show: $isLoading)
                 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		134FC81029EF88DC004CA8F3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FC80F29EF88DC004CA8F3 /* LoginView.swift */; };
+		135206F32A09887900DAD6C6 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135206F22A09887900DAD6C6 /* SearchUserView.swift */; };
 		139D79BA29F4D612007C7FFF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D79B929F4D612007C7FFF /* RegisterView.swift */; };
 		139D79BC29F63642007C7FFF /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D79BB29F63641007C7FFF /* View+Extensions.swift */; };
 		13ADD8A229E530D300BEC79E /* GnoMEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ADD8A129E530D300BEC79E /* GnoMEApp.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		134FC80F29EF88DC004CA8F3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		135206F22A09887900DAD6C6 /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
 		139D79B929F4D612007C7FFF /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		139D79BB29F63641007C7FFF /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		13ADD89E29E530D300BEC79E /* GnoME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GnoME.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135206F02A09857500DAD6C6 /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				13B6E04429F75C3E004CD4FF /* PostsView.swift */,
+				13B6E04729F8C8F8004CD4FF /* ReusablePostsView.swift */,
+				13B6E04929F8CC9B004CD4FF /* PostCardView.swift */,
+			);
+			path = PostView;
+			sourceTree = "<group>";
+		};
+		135206F12A09859D00DAD6C6 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				13BE5DBD29F641F800461878 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 		13ADD89529E530D300BEC79E = {
 			isa = PBXGroup;
 			children = (
@@ -171,14 +191,12 @@
 			isa = PBXGroup;
 			children = (
 				13ADD8BD29E533AC00BEC79E /* LandingPage.swift */,
-				13BE5DBD29F641F800461878 /* ProfileView.swift */,
 				13ADD8BF29E533B800BEC79E /* LateLandingPage.swift */,
 				13ADD8C129E533C600BEC79E /* HomeScreen.swift */,
 				13ADD8C329E533D800BEC79E /* LeaderBoard.swift */,
-				13ADD8C529E533ED00BEC79E /* UserProfile.swift */,
-				13B6E04429F75C3E004CD4FF /* PostsView.swift */,
-				13B6E04729F8C8F8004CD4FF /* ReusablePostsView.swift */,
-				13B6E04929F8CC9B004CD4FF /* PostCardView.swift */,
+				135206F12A09859D00DAD6C6 /* ProfileView */,
+				135206F02A09857500DAD6C6 /* PostView */,
+				135206F22A09887900DAD6C6 /* SearchUserView.swift */,
 			);
 			path = MainScreens;
 			sourceTree = "<group>";
@@ -216,6 +234,7 @@
 		13B6E04629F8C76B004CD4FF /* old */ = {
 			isa = PBXGroup;
 			children = (
+				13ADD8C529E533ED00BEC79E /* UserProfile.swift */,
 				13ADD8B529E5337000BEC79E /* WelcomeScreen.swift */,
 				13ADD8B729E5337E00BEC79E /* SignUp1.swift */,
 				13ADD8B929E5338D00BEC79E /* SignUp2.swift */,
@@ -342,6 +361,7 @@
 				13ADD8A229E530D300BEC79E /* GnoMEApp.swift in Sources */,
 				13BE5DBE29F641F800461878 /* ProfileView.swift in Sources */,
 				13ADD8CC29E5346400BEC79E /* Question.swift in Sources */,
+				135206F32A09887900DAD6C6 /* SearchUserView.swift in Sources */,
 				13ADD8B829E5337E00BEC79E /* SignUp1.swift in Sources */,
 				13ADD8BA29E5338D00BEC79E /* SignUp2.swift in Sources */,
 				13B6E04829F8C8F8004CD4FF /* ReusablePostsView.swift in Sources */,
